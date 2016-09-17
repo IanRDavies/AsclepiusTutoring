@@ -1,4 +1,44 @@
+nav {
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
 body { 
-	padding-top: 70px;
+	padding-top: 90px;
+	padding-left: 5%;
+	padding-right: 5%;
 	background-color: #0D44E3
 	}
+
+h1 {
+	font-family: "Antwerp";
+	font-size:8rem;
+	color:white;
+}
+
+.navbar-default .navbar-nav > li > a {
+	font-family: "ATC HARRIS";
+	font-size: 2rem;
+	font-weight: 500;
+	color: #22316A;
+	padding-left: 7.5rem;
+}
+
+#title-line {
+	background-color:white;
+	height:10px;
+}
+
+.no-decoration-link, .no-decoration-link:hover {
+	text-decoration: none
+}
+
+#down-arrow {
+	color:white;
+	font-size: 5em;
+	display: block;
+	text-align: center;
+	padding-top: 6rem;
+	padding-bottom: 5rem;
+}
+
