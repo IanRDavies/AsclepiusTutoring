@@ -113,8 +113,8 @@ hr.banner {
 
 hr.dark-banner {
 	height: 52px;
-    /*background-image: url("/img/dark-banner.png");*/
-    background-image: url("http://i66.tinypic.com/2qkotgy.png");
+    background: url("/img/dark-banner.png");
+/*    background-image: url("http://i66.tinypic.com/2qkotgy.png");*/
 }
 
 #btn-div {
@@ -123,8 +123,8 @@ hr.dark-banner {
 }
 
 hr.light-banner {
-    /*background-image: url("/img/light-banner.png");*/
-    background-image: url("http://i68.tinypic.com/sfxgfc.png");
+    background: url("/img/light-banner.png");
+/*    background-image: url("http://i68.tinypic.com/sfxgfc.png");*/
     height: 52px
 }
 
