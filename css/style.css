@@ -1,3 +1,21 @@
+@media (max-width: 950px) {
+  .navbar-header {
+      float: none;
+  }
+  .navbar-left,.navbar-right {
+      float: none !important;
+  }
+  .navbar-toggle {
+      display: block;
+  }
+  .navbar-collapse.collapse {
+      display: none!important;
+  }
+  .collapse.in{
+      display:block !important;
+  }
+}
+
 nav {
 	padding-left: 5%;
 	padding-right: 5%;
@@ -15,6 +33,35 @@ h1 {
 	font-size:8rem;
 	color:white;
 }
+h2 {
+	font-family: "ATC Harris";
+	text-transform: uppercase;
+	color: white;
+	padding-bottom: 2.5rem;
+}
+
+p {
+	font-family: Antwerp;
+	font-size: 20px;
+	color: white;
+	max-width: 90%;
+}
+
+button {
+	background-color: white;
+	text-transform: uppercase;
+	color: #0D44E3;
+	border: none;
+	outline: none;
+	height: 4rem;
+	line-height: 4rem;
+	width: 16rem;
+	font-family: "ATC HARRIS";
+	font-weight: 600;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+}
 
 .navbar-default .navbar-nav > li > a {
 	font-family: "ATC HARRIS";
@@ -24,13 +71,22 @@ h1 {
 	padding-left: 7.5rem;
 }
 
-#title-line {
-	background-color:white;
+
+
+.title-line {
+	background-color: white;
 	height:10px;
 }
 
+.subtitle-line {
+	background-color: white;
+	height: 5px;
+	max-width: 90%;
+    margin-left: 0;
+}
+
 .no-decoration-link, .no-decoration-link:hover {
-	text-decoration: none
+	text-decoration: none !important;
 }
 
 #down-arrow {
@@ -39,6 +95,37 @@ h1 {
 	display: block;
 	text-align: center;
 	padding-top: 6rem;
-	padding-bottom: 5rem;
+	padding-bottom: 4.5rem;
+	text-decoration: none;
 }
 
+#top-container {
+	height: 57.2rem;
+}
+hr.banner {
+    border: 0;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-repeat: repeat no-repeat;
+    overflow: hidden;
+}
+
+hr.dark-banner {
+	height: 52px;
+    background-image: url("/img/dark-banner.png");
+}
+
+#btn-div {
+	padding-top: 5rem;
+	padding-bottom: 8rem;
+}
+
+hr.light-banner {
+    background-image: url("/img/light-banner.png");
+    height: 52px
+}
+
+hr.bottom {
+    margin-bottom: 0px !important;
+}
