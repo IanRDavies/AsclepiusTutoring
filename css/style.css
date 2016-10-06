@@ -1,3 +1,11 @@
+/*
+Navy: #03276D
+Bright Blue: #0E43E3
+Light Blue: #00A5F7
+Light Grey: #F7F7F7
+White: #FFFFFF
+*/
+
 @media (max-width: 950px) {
   .navbar-header {
       float: none;
@@ -49,7 +57,7 @@ h2 {
 	color: white;
 }
 
-p {
+p, li {
 	font-family: Antwerp;
 	font-size: 20px;
 	color: white;
@@ -155,4 +163,21 @@ hr.bottom {
 
 .below-title{
 	margin-top: 70px;
+}
+
+hr.fixed-bottom{
+	margin-bottom: 0px !important;
+	bottom: 0;
+}
+#my_typeform{
+	width:100%;
+	height:80%;
+	overflow:hidden;
+	border:0;
+}
+#my_typeform::-webkit-scrollbar {
+ display: none;
+}
+::-webkit-scrollbar { 
+    display: none; 
 }
