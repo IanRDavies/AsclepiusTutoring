@@ -47,12 +47,13 @@ body {
 	}
 
 h1 {
-	font-family: "Antwerp";
+	font-family: "Antwerp Semi Bold";
 	font-size:8rem;
 	color:white;
 }
 h2 {
 	font-family: "ATC Harris";
+	font-weight: bold;
 	text-transform: uppercase;
 	color: white;
 }
