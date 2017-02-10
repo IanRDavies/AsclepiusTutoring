@@ -5,15 +5,45 @@ Light Blue: #00A5F7
 Light Grey: #F7F7F7
 White: #FFFFFF
 */
+
+@media (max-width: 950px) {
+  .navbar-header {
+      float: none;
+  }
+  .navbar-left,.navbar-right {
+      float: none !important;
+  }
+  .navbar-toggle {
+      display: block;
+  }
+  .navbar-collapse.collapse {
+      display: none!important;
+  }
+  .collapse.in{
+      display:block !important;
+  }
+  h1 {
+    font-size: 6rem !important;
+  }
+}
+
 nav {
 	padding-left: 5%;
 	padding-right: 5%;
 }
 
-body {
-	/*padding-top: 50px;*/
-	background-color: #0D44E3;
+/*html {
+	width:100%;
+	height:100%;
+}*/
 
+body {
+	padding-top: 50px;
+/*	padding-left: 5%;
+	padding-right: 5%;*/
+	background-color: #0D44E3;
+/*	width: 100%;*/
+/*	height: 100%;*/
 	}
 
 h1 {
@@ -47,8 +77,8 @@ button {
 	font-family: "ATC HARRIS";
 	font-weight: 600;
 	position: absolute;
-	text-transform: uppercase;
-	padding: auto;
+	left: 50%;
+	transform: translate(-50%);
 }
 
 .navbar-default .navbar-nav > li > a {
@@ -57,22 +87,6 @@ button {
 	font-weight: 500;
 	color: #22316A;
 	padding-left: 7.5rem;
-}
-
-@media(max-width: 870px){
-.nav-logo{
-	background: url("../img/relicon-small.png") no-repeat center;
-	width:150px;
-	height:50px;
-	}
-}
-@media(min-width: 871px){
-.nav-logo{
-	background: url("../img/asclepius-medium.png") no-repeat;
-	background-position: left center;
-	width:228px;
-	height:50px;
-	}
 }
 
 .title-line {
@@ -87,30 +101,26 @@ button {
     margin-left: 0;
 }
 
-.centered{
-	position:absolute;
-	width:84px;
-	left:0;
-	right:0;
-	margin-left: auto;
-	margin-right: auto;
-}
-#arrow-div{
-	bottom:80px;
+.no-decoration-link, .no-decoration-link:hover {
+	text-decoration: none !important;
+	cursor: pointer;
 }
 
-.no-decoration-link, .no-decoration-link:hover {
+#down-arrow {
+	color:white;
+	font-size: 5em;
+	display: block;
+	text-align: center;
+	padding-top: 4%;
+	padding-bottom: 5%;
 	text-decoration: none;
-	cursor: pointer;
 }
 
 #top-panel {
 	background: inherit;
 	color: white;
+	height: 100%;
 	min-height: 495px;
-	position: relative;
-	padding:0;
-	margin:0;
 }
 .jumbotron {
 	height: 100vh;
@@ -118,15 +128,6 @@ button {
 #top-info {
 	padding: 0 5%;
 	overflow-y: hidden;
-	height: 100%;
-	padding-top:50px;
-	width:100%;
-}
-#down-arrow{
-	/*bottom:70px;*/
-	color:white;
-	font-size: 6em;
-	text-align: center;
 }
 hr.banner {
     border: 0;
@@ -142,6 +143,14 @@ hr.dark-banner {
 	height: 52px;
  /*   background-image: url("dark-banner.png");*/
     background: url("https://raw.githubusercontent.com/IanRDavies/AsclepiusTutoring/master/img/dark-banner.PNG");
+    bottom: 0;  /*still need to fix as height differs*/
+}
+
+#btn-div {
+	position: relative;
+	bottom: 0;
+	padding-top: 3rem;
+	padding-bottom: 7rem;
 }
 
 hr.light-banner {
@@ -151,14 +160,22 @@ hr.light-banner {
 }
 
 hr.bottom {
-    margin-bottom: 0px;
-    bottom: 0;
+    margin-bottom: 0px !important;
 }
 
-/*.below-title{
-	margin-top: 70px;
-}*/
+.spacer {
+	position: relative;
+	height: 52px;
+}
 
+.below-title{
+	margin-top: 70px;
+}
+
+hr.fixed-bottom{
+	margin-bottom: 0px !important;
+	bottom: 0;
+}
 #my_typeform{
 	width:100%;
 	height:80%;
